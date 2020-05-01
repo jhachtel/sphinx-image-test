@@ -14,6 +14,7 @@
     <script src="_static/language_data.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Broken Image Links" href="broken_images.html" />
     <link rel="prev" title="Sphinx Image Directive Test" href="index.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
@@ -25,6 +26,9 @@
         <li class="right" >
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
+        <li class="right" >
+          <a href="broken_images.html" title="Broken Image Links"
+             accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="index.html" title="Sphinx Image Directive Test"
              accesskey="P">previous</a> |</li>
@@ -39,16 +43,110 @@
             
   <div class="section" id="cli-module">
 <h1>CLI Module<a class="headerlink" href="#cli-module" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="id1">
-<h2>CLI Module<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<span class="target" id="module-app.cli"></span><p>Minimal user interface</p>
-<img alt="cli-xkcd-epi-remote" src="https://imgs.xkcd.com/comics/everyones_an_epidemiologist.png" />
-<img alt="cli-xkcd-epi-local" src="images/everyones_an_epidemiologist.png" />
+<div class="section" id="cli-rst-file-image-directives">
+<h2><strong>–cli rst file image directives–</strong><a class="headerlink" href="#cli-rst-file-image-directives" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="xkcd-image-url-for-hotlinking-embedding">
+<h3>XKCD ‘Image URL (for hotlinking/embedding):’<a class="headerlink" href="#xkcd-image-url-for-hotlinking-embedding" title="Permalink to this headline">¶</a></h3>
+<img alt="index-xkcd-cq-remote" src="https://imgs.xkcd.com/comics/code_quality.png" />
 </div>
-<div class="section" id="images">
-<h2>Images<a class="headerlink" href="#images" title="Permalink to this headline">¶</a></h2>
-<img alt="cli-rst-xkcd-epi-remote" src="https://imgs.xkcd.com/comics/everyones_an_epidemiologist.png" />
-<img alt="cli-rst-xkcd-epi-local" src="images/everyones_an_epidemiologist.png" />
+<div class="section" id="images-source">
+<h3>images_source<a class="headerlink" href="#images-source" title="Permalink to this headline">¶</a></h3>
+<p><strong>This is where I expect the image to be, and where it is in my production project.
+The images directory in the source directory of the docs directory.</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>I am on a Windows 10 machine.</p>
+</div>
+<p><cite>sphinx_image_test\docs\source\images_source\code_quality.png</cite></p>
+<img alt="cli-rst-xkcd-cq-local" src="_images/code_quality.png" />
+</div>
+<div class="section" id="images-docs">
+<h3>images_docs<a class="headerlink" href="#images-docs" title="Permalink to this headline">¶</a></h3>
+<img alt="cli-rst-xkcd-cq-local" src="_images/code_quality1.png" />
+</div>
+<div class="section" id="images-root">
+<h3>images_root<a class="headerlink" href="#images-root" title="Permalink to this headline">¶</a></h3>
+<img alt="cli-rst-xkcd-cq-local" src="_images/code_quality2.png" />
+</div>
+<div class="section" id="images-app">
+<h3>images_app<a class="headerlink" href="#images-app" title="Permalink to this headline">¶</a></h3>
+<img alt="cli-rst-xkcd-cq-local" src="_images/code_quality3.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="end-cli-rst-file-image-directives">
+<h2><strong>–End cli rst file image directives–</strong><a class="headerlink" href="#end-cli-rst-file-image-directives" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="cli-module-in-app-package">
+<h3>CLI Module in app Package<a class="headerlink" href="#cli-module-in-app-package" title="Permalink to this headline">¶</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is where the cli module is linked into the cli.rst file.
+It should show the same as above,
+only the image is being linked from the app package,
+specifically the cli module.</p>
+</div>
+<span class="target" id="module-app.cli"></span><div class="section" id="inside-the-cli-module-docstring">
+<h4><strong>–Inside the cli module docstring–</strong><a class="headerlink" href="#inside-the-cli-module-docstring" title="Permalink to this headline">¶</a></h4>
+<p>Minimal user interface to have a functional application.</p>
+<div class="section" id="id1">
+<h5>XKCD ‘Image URL (for hotlinking/embedding):’<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h5>
+<img alt="index-xkcd-cq-remote" src="https://imgs.xkcd.com/comics/code_quality.png" />
+</div>
+<div class="section" id="id2">
+<h5>images_source<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h5>
+<p><strong>This is where I expect the image to be, and where it is in my production project. 
+The images directory in the source directory of the docs directory.</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>I am on a Windows 10 machine.</p>
+</div>
+<p><cite>sphinx_image_testdocssourceimages_sourcecode_quality.png</cite></p>
+<img alt="cli-xkcd-cq-local" src="_images/code_quality.png" />
+</div>
+<div class="section" id="id3">
+<h5>images_docs<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h5>
+<img alt="cli-xkcd-cq-local" src="_images/code_quality1.png" />
+</div>
+<div class="section" id="id4">
+<h5>images_root<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h5>
+<img alt="cli-xkcd-cq-local" src="_images/code_quality2.png" />
+</div>
+<div class="section" id="id5">
+<h5>images_app<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h5>
+<img alt="cli-xkcd-cq-local" src="_images/code_quality3.png" />
+</div>
+</div>
+<div class="section" id="end-cli-module-docstring">
+<h4><strong>–End cli module docstring–</strong><a class="headerlink" href="#end-cli-module-docstring" title="Permalink to this headline">¶</a></h4>
+<dl class="py function">
+<dt id="app.cli.echo_user_input">
+<code class="sig-prename descclassname">app.cli.</code><code class="sig-name descname">echo_user_input</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">user_input</span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.cli.echo_user_input" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print whatever was typed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>user_input</strong> (<em>str</em>) – The string value of whatever the user typed.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="app.cli.get_user_input">
+<code class="sig-prename descclassname">app.cli.</code><code class="sig-name descname">get_user_input</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.cli.get_user_input" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets user input.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Whatever the user types.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</div>
 </div>
 </div>
 
@@ -61,16 +159,16 @@
 <h3><a href="index.html">Table of Contents</a></h3>
 <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">CLI Module</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id1">CLI Module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#images">Images</a></li>
-</ul>
-</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">CLI Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="broken_images.html">Broken Image Links</a></li>
 </ul>
 
   <h4>Previous topic</h4>
   <p class="topless"><a href="index.html"
                         title="previous chapter">Sphinx Image Directive Test</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="broken_images.html"
+                        title="next chapter">Broken Image Links</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -101,6 +199,9 @@
         <li class="right" >
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
+        <li class="right" >
+          <a href="broken_images.html" title="Broken Image Links"
+             >next</a> |</li>
         <li class="right" >
           <a href="index.html" title="Sphinx Image Directive Test"
              >previous</a> |</li>

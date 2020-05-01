@@ -41,31 +41,73 @@
 <h1>Sphinx Image Directive Test<a class="headerlink" href="#sphinx-image-directive-test" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
-<p>This project exists to figure out why images do not display in
+<p><strong>This project exists to figure out why images do not display in
 documentation when using reStructuredText image directives for
-some users.</p>
-<img alt="index-xkcd-epi-remote" src="https://imgs.xkcd.com/comics/everyones_an_epidemiologist.png" />
+some users.</strong></p>
+<p>There is an index, cli, and broken_images rst file,
+and a docstring in the cli module.
+The same image is linked from various locations to various locations
+to demonstrate proper pathing.</p>
+<p>The broken_images.rst file has a few examples
+of how the image directive can be broken.
+<strong>Feel free to add more.</strong></p>
+</div>
+<div class="section" id="application-instructions">
+<h2>Application Instructions<a class="headerlink" href="#application-instructions" title="Permalink to this headline">¶</a></h2>
+<p>The virtual environment is <cite>imgtest</cite>.</p>
+<p>Activate the environment on Windows by typing:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">imgtest</span>\<span class="n">Scripts</span>\<span class="n">activate</span>
+</pre></div>
+</div>
+<p>Deactivate on Windows by typing:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">deactivate</span>
+</pre></div>
+</div>
+<p>Feel free to add instructions for Mac and Linux if you know them.</p>
+<p>The entry point for the app is run.py in the root folder.
+It simply takes command line input and echoes back,
+telling you what it received as input from you.</p>
+<div class="section" id="xkcd-image-url-for-hotlinking-embedding">
+<h3>XKCD ‘Image URL (for hotlinking/embedding):’<a class="headerlink" href="#xkcd-image-url-for-hotlinking-embedding" title="Permalink to this headline">¶</a></h3>
+<img alt="index-xkcd-cq-remote" src="https://imgs.xkcd.com/comics/code_quality.png" />
 </div>
 <div class="section" id="images-source">
-<h2>Images_source<a class="headerlink" href="#images-source" title="Permalink to this headline">¶</a></h2>
-<img alt="index-xkcd-epi-local" src="images/everyones_an_epidemiologist.png" />
+<h3>images_source<a class="headerlink" href="#images-source" title="Permalink to this headline">¶</a></h3>
+<p><cite>sphinx_image_test\docs\source\images_source\code_quality.png</cite></p>
+<p><strong>This is where I expect the image to be, and where it is in my production project.
+The images directory in the source directory of the docs directory.</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>I am on a Windows 10 machine.</p>
+</div>
+<img alt="index-xkcd-cq-local" src="_images/code_quality.png" />
+</div>
+<div class="section" id="images-docs">
+<h3>images_docs<a class="headerlink" href="#images-docs" title="Permalink to this headline">¶</a></h3>
+<img alt="index-xkcd-cq-local" src="_images/code_quality1.png" />
+</div>
+<div class="section" id="images-root">
+<h3>images_root<a class="headerlink" href="#images-root" title="Permalink to this headline">¶</a></h3>
+<img alt="index-xkcd-cq-local" src="_images/code_quality2.png" />
+</div>
+<div class="section" id="images-app">
+<h3>images_app<a class="headerlink" href="#images-app" title="Permalink to this headline">¶</a></h3>
+<img alt="index-xkcd-cq-local" src="_images/code_quality3.png" />
 <div class="toctree-wrapper compound">
 <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="cli.html">CLI Module</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="cli.html#id1">CLI Module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cli.html#images">Images</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="cli.html">CLI Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="broken_images.html">Broken Image Links</a></li>
 </ul>
 </div>
 <div class="section" id="indices-and-tables">
-<h3>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h3>
+<h4>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
 <li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
 <li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
 </ul>
+</div>
 </div>
 </div>
 </div>
@@ -80,6 +122,7 @@ some users.</p>
 <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="cli.html">CLI Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="broken_images.html">Broken Image Links</a></li>
 </ul>
 
   <h4>Next topic</h4>
