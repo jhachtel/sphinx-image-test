@@ -5,7 +5,7 @@ Entry point/main module for the app.
    :alt: run-xkcd-epi-remote
 
 
-.. image:: images/everyones_an_epidemiologist.png
+.. image:: docs/source/images/everyones_an_epidemiologist.png
    :alt: run-xkcd-epi-local
 
 

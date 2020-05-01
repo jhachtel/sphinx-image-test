@@ -5,7 +5,7 @@ Minimal user interface
    :alt: cli-xkcd-epi-remote
 
 
-.. image:: images/everyones_an_epidemiologist.png
+.. image:: ../docs/source/images/everyones_an_epidemiologist.png
    :alt: cli-xkcd-epi-local
 
 
